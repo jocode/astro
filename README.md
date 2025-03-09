@@ -33,3 +33,7 @@ Un componente de diseño Astro típico proporciona a las páginas Astro, Markdow
 
 - Un shell de página (etiquetas `<html>`, `<head>` y `<body>`) 
 - Un `<slot />` para especificar dónde se debe inyectar el contenido individual de la página.
+
+
+> [!TIP]
+> Una página muy util para ver templates de 404 es la siguiente [35+ HTML 404 Page Templates](https://dev.to/stackfindover/35-html-404-page-templates-5bge)
