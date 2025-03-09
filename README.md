@@ -24,3 +24,12 @@ Astro tiene una estructura de directorios y archivos que se generan automáticam
 - `tsconfig.json`: La configuración de TypeScript.
 - `src/content/`: Contenido de tu sitio web (archivos Markdown, JSON, etc.)
 - `src/actions/`: Acciones de tu sitio web (funciones Lambda, etc.)
+
+## Layouts
+
+Los [layouts](https://docs.astro.build/en/basics/layouts/) con componentes e astro usados para proporcionar una estructura de UI reutilizable, como un template. Los layouts se pueden usar para envolver páginas y componentes.
+
+Un componente de diseño Astro típico proporciona a las páginas Astro, Markdown o MDX lo siguiente:
+
+- Un shell de página (etiquetas `<html>`, `<head>` y `<body>`) 
+- Un `<slot />` para especificar dónde se debe inyectar el contenido individual de la página.

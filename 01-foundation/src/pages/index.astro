@@ -1,35 +1,12 @@
 ---
-import Navbar from '../components/navbar.astro';
+import Navbar from '../components/Navbar.astro';
 import Layout from '../layouts/Layout.astro';
+import MainLayout from '../layouts/MainLayout.astro';
 
 const name = 'Johan Mosquera';
 const URL = 'Inicio';
 ---
 
-<Layout>
-   <Navbar />
-
-	<h1>{name}</h1>
-
-	<p>Momento actual: {new Date().toLocaleTimeString()}</p>
-	<p id="current-time">Momento actual real:</p>
-
-	<footer>
-		Year: 2023
-	</footer>
-	<script>
-		const footer = document.querySelector('footer') as HTMLElement;
-		const currentTimeElement = document.getElementById("current-time") as HTMLElement;
-		
-		const currentYear = new Date().getFullYear();
-		const currentTime = new Date().toLocaleTimeString();
-
-		footer.innerText = `Year: ${currentYear}`;
-		currentTimeElement.innerText = `Momento actual real: ${currentTime}`;
-
-		setInterval(() => {
-			const currentTime = new Date().toLocaleTimeString();
-			currentTimeElement.innerText = `Momento actual real: ${currentTime}`;
-		}, 1000);
-	</script>
-</Layout>
+<MainLayout title="Home Page">
+	<h1>Index</h1>
+</MainLayout>
