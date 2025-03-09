@@ -1,11 +1,31 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const name = 'Johan Mosquera';
 ---
 
 <Layout>
-	<Welcome />
+	<h1>{name}</h1>
+
+	<p>Momento actual: {new Date().toLocaleTimeString()}</p>
+	<p id="current-time">Momento actual real:</p>
+
+	<footer>
+		Year: 2023
+	</footer>
+	<script>
+		const footer = document.querySelector('footer') as HTMLElement;
+		const currentTimeElement = document.getElementById("current-time") as HTMLElement;
+		
+		const currentYear = new Date().getFullYear();
+		const currentTime = new Date().toLocaleTimeString();
+
+		footer.innerText = `Year: ${currentYear}`;
+		currentTimeElement.innerText = `Momento actual real: ${currentTime}`;
+
+		setInterval(() => {
+			const currentTime = new Date().toLocaleTimeString();
+			currentTimeElement.innerText = `Momento actual real: ${currentTime}`;
+		}, 1000);
+	</script>
 </Layout>
