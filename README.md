@@ -37,3 +37,9 @@ Un componente de diseño Astro típico proporciona a las páginas Astro, Markdow
 
 > [!TIP]
 > Una página muy util para ver templates de 404 es la siguiente [35+ HTML 404 Page Templates](https://dev.to/stackfindover/35-html-404-page-templates-5bge)
+
+## View Transitions
+
+Astro permite crear [transiciones de vista](https://docs.astro.build/en/guides/view-transitions/#adding-view-transitions-to-a-page) entre páginas. Las transiciones de vista son animaciones que se ejecutan al cambiar de una página a otra. Las transiciones de vista se pueden aplicar a todas las páginas o a páginas específicas.
+
+Usando las transiciones de vista, podremos tener nuestro sitio web como si fuera una aplicación de una sola página (SPA).
