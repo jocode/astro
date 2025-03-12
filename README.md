@@ -43,3 +43,9 @@ Un componente de diseño Astro típico proporciona a las páginas Astro, Markdow
 Astro permite crear [transiciones de vista](https://docs.astro.build/en/guides/view-transitions/#adding-view-transitions-to-a-page) entre páginas. Las transiciones de vista son animaciones que se ejecutan al cambiar de una página a otra. Las transiciones de vista se pueden aplicar a todas las páginas o a páginas específicas.
 
 Usando las transiciones de vista, podremos tener nuestro sitio web como si fuera una aplicación de una sola página (SPA).
+
+## Desplegar Astro en GitHub Pages
+
+Puedes desplegar un proyecto de [Astro en GitHub Pages](https://docs.astro.build/es/guides/deploy/github/) usando GitHub Actions para construir y desplegar tu proyecto automáticamente. Para hacer esto, tu código fuente debe estar alojado en GitHub.
+
+Astro mantiene la acción oficial withastro/action para desplegar tu proyecto con muy poca configuración. Sigue las instrucciones a continuación para desplegar tu proyecto de Astro en GitHub Pages y consulta el README si necesitas más información.
